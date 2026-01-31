@@ -1,0 +1,136 @@
+<!-- The general layout of my webpage uses h1 and h3 to dictate different reading levels. I used the default table layout given in Slack to stylize the <table>
+necessary in this homework, and used a generic name of a brand of grapes, grown in France as my product. The layout makes it easy to follow, and I used emphasis
+and strong where ever it seemed logical to make the sales pitch more effective. I grouped sections with unique IDs so that it's easier at a glance to notice
+where to look, and have a layout of <header> followed by <section>'s with unique IDs, and <footer> to denote the "About Us" area. I also used italics in my
+instructions to make it pop and stand out -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grapes, Just Grapes</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong><h1>Grapes, Just Grapes</h1></strong>
+      <p>
+        <em>Delicious. Bursting. The greatest grapes you'll ever taste.</em>
+      </p>
+      <img
+        src="https://fastly.picsum.photos/id/75/1999/2998.jpg?hmac=0agRZd8c5CRiFvADOWJqfTv6lqYBty3Kw-9LEtLp_98"
+        alt="Image of Black Grapes on a Vine"
+        width="350px"
+      />
+    </header>
+
+<!-- Main description here -->
+    <section id="Main Description">
+      <p>
+        Nature's perfect little treat. Each premium grape grown in our French
+        vineyards <strong>explodes</strong> in your mouth with natural acidity,
+        making them perfect for all of your consumption needs. Whether it be for
+        snacking or salads, our grapes are filled with antioxidants to pair
+        health, with flavor.
+      </p>
+      <p>
+        <strong
+          >Don't sabotage your body for flavor, buy our grapes and savor them
+          forever.</strong
+        >
+      </p>
+    </section>
+
+<!-- Features here, with an unordered list -->
+    <section id="Key Features">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Intensely sweet and juicy</li>
+        <li>
+          Premium grade, each individual grape is checked by our QA team in
+          France
+        </li>
+        <li>
+          Harvested perfectly. Preserved perfectly. Arrives at your doorstep at
+          peak ripeness, perfectly.
+        </li>
+      </ul>
+    </section>
+
+<!-- Specs here, uses a table layout given in Slack -->
+    <section id="Specifications Table">
+      <h3>Specifications</h3>
+      <table>
+        <tr>
+          <th>Variety</th>
+          <th>Origin</th>
+          <th>Size/grape (diameter)</th>
+          <th>Weight</th>
+        </tr>
+        <tr>
+          <td>Concord Black Grapes</td>
+          <td>France</td>
+          <td>20-24mm</td>
+          <td>~250g</td>
+        </tr>
+      </table>
+    </section>
+
+<!-- Instructions that has italics and an ordered list -->
+    <section id="Instructions">
+      <h3>How to Savor these Delicacies</h3>
+      <ol>
+        <em>
+          <li>
+            Rinse the grapes under lukewarm water. Temperature extremes may harm
+            the flavor profile.
+          </li>
+          <li>
+            Gently remove a single grape from the stem, and check for visual
+            discrepancies.
+          </li>
+          <li>
+            Insert the grape, one at a time, into your mouth. Roll it around,
+            before biting in.
+          </li>
+          <li>
+            Fully savor the unique flavor profiles before inserting another
+            grape into your mouth.
+          </li>
+        </em>
+      </ol>
+    </section>
+
+<!-- Button prompt here -->
+    <section id="Add grapes to cart">
+      <h3>Great! How do I buy them?</h3>
+      <p>
+        Purchasing our grapes is as easy as one-two-three. Click on the "Add to
+        Cart" button below, and checkout whenever you're ready.
+      </p>
+      <button type="button">Add to cart!</button>
+    </section>
+
+<!-- Footer, link, email, telephone number -->
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Visit us <a href="www.grapesjustgrapes.com" target="_blank">here</a> to
+        see more of our wonderful products.
+      </p>
+      <p>
+        Questions? Send us an
+        <a href="mailto:hamidjae@byu.edu">email here</a> or call
+        <a href="tel:6825546250">us</a> with your questions. Our customer
+        service is elite.
+      </p>
+    </footer>
+  </body>
+</html>
