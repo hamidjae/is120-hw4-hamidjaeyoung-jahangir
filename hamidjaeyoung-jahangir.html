@@ -1,8 +1,6 @@
-<!-- The general layout of my webpage uses h1 and h3 to dictate different reading levels. I used the default table layout given in Slack to stylize the <table>
-necessary in this homework, and used a generic name of a brand of grapes, grown in France as my product. The layout makes it easy to follow, and I used emphasis
-and strong where ever it seemed logical to make the sales pitch more effective. I grouped sections with unique IDs so that it's easier at a glance to notice
-where to look, and have a layout of <header> followed by <section>'s with unique IDs, and <footer> to denote the "About Us" area. I also used italics in my
-instructions to make it pop and stand out -->
+<!-- The first CSS property I used that we didn't cover in class was display: block. This allows the image that I have to behave as a block-level element. Using this in combination with margin: auto allows me to center that image.
+The second CSS property I used was block-size. This allows me to alter the size of the block element for the title, which was important for styling it so that it properly has gaps from top to middle and middle to top.
+The third CSS property I used was filter. I used filter to transform the image to have 50% sepia, which makes the colors more lighter and makes it blend in better with the overall green aesthetic of the page. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,32 +8,34 @@ instructions to make it pop and stand out -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grapes, Just Grapes</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <strong><h1>Grapes, Just Grapes</h1></strong>
-      <p>
+      <strong><h1 id="title">Grapes, Just Grapes</h1></strong>
+      <p id="introduction">
         <em>Delicious. Bursting. The greatest grapes you'll ever taste.</em>
       </p>
-      <img
+      <img id="grape-image"
         src="https://fastly.picsum.photos/id/75/1999/2998.jpg?hmac=0agRZd8c5CRiFvADOWJqfTv6lqYBty3Kw-9LEtLp_98"
         alt="Image of Black Grapes on a Vine"
-        width="350px"
       />
     </header>
 
 <!-- Main description here -->
+ <br>
     <section id="Main Description">
       <p>
         Nature's perfect little treat. Each premium grape grown in our French
-        vineyards <strong>explodes</strong> in your mouth with natural acidity,
+        vineyards <strong id="explosion">explodes</strong> in your mouth with natural acidity,
         making them perfect for all of your consumption needs. Whether it be for
         snacking or salads, our grapes are filled with antioxidants to pair
         health, with flavor.
@@ -50,8 +50,8 @@ instructions to make it pop and stand out -->
 
 <!-- Features here, with an unordered list -->
     <section id="Key Features">
-      <h3>Key Features</h3>
-      <ul>
+      <h3 class="headings">Key Features</h3>
+      <ul class="normaltext">
         <li>Intensely sweet and juicy</li>
         <li>
           Premium grade, each individual grape is checked by our QA team in
@@ -66,18 +66,18 @@ instructions to make it pop and stand out -->
 
 <!-- Specs here, uses a table layout given in Slack -->
     <section id="Specifications Table">
-      <h3>Specifications</h3>
+      <h3 class="headings">Specifications</h3>
       <table>
-        <tr>
+        <tr class="headings">
           <th>Variety</th>
           <th>Origin</th>
           <th>Size/grape (diameter)</th>
           <th>Weight</th>
         </tr>
-        <tr>
+        <tr class="normaltext">
           <td>Concord Black Grapes</td>
           <td>France</td>
-          <td>20-24mm</td>
+          <td id="centerable">20-24mm</td>
           <td>~250g</td>
         </tr>
       </table>
@@ -85,8 +85,8 @@ instructions to make it pop and stand out -->
 
 <!-- Instructions that has italics and an ordered list -->
     <section id="Instructions">
-      <h3>How to Savor these Delicacies</h3>
-      <ol>
+      <h3 class="headings">How to Savor these Delicacies</h3>
+      <ol class="normaltext">
         <em>
           <li>
             Rinse the grapes under lukewarm water. Temperature extremes may harm
@@ -110,7 +110,7 @@ instructions to make it pop and stand out -->
 
 <!-- Button prompt here -->
     <section id="Add grapes to cart">
-      <h3>Great! How do I buy them?</h3>
+      <h3 class="headings">Great! How do I buy them?</h3>
       <p>
         Purchasing our grapes is as easy as one-two-three. Click on the "Add to
         Cart" button below, and checkout whenever you're ready.
@@ -120,7 +120,7 @@ instructions to make it pop and stand out -->
 
 <!-- Footer, link, email, telephone number -->
     <footer>
-      <h3>About Us</h3>
+      <h3 class="headings">About Us</h3>
       <p>
         Visit us <a href="www.grapesjustgrapes.com" target="_blank">here</a> to
         see more of our wonderful products.
