@@ -1,0 +1,136 @@
+<!-- The first CSS property I used that we didn't cover in class was display: block. This allows the image that I have to behave as a block-level element. Using this in combination with margin: auto allows me to center that image.
+The second CSS property I used was block-size. This allows me to alter the size of the block element for the title, which was important for styling it so that it properly has gaps from top to middle and middle to top.
+The third CSS property I used was filter. I used filter to transform the image to have 50% sepia, which makes the colors more lighter and makes it blend in better with the overall green aesthetic of the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grapes, Just Grapes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <strong><h1 id="title">Grapes, Just Grapes</h1></strong>
+      <p id="introduction">
+        <em>Delicious. Bursting. The greatest grapes you'll ever taste.</em>
+      </p>
+      <img id="grape-image"
+        src="https://fastly.picsum.photos/id/75/1999/2998.jpg?hmac=0agRZd8c5CRiFvADOWJqfTv6lqYBty3Kw-9LEtLp_98"
+        alt="Image of Black Grapes on a Vine"
+      />
+    </header>
+
+<!-- Main description here -->
+ <br>
+    <section id="Main Description">
+      <p>
+        Nature's perfect little treat. Each premium grape grown in our French
+        vineyards <strong id="explosion">explodes</strong> in your mouth with natural acidity,
+        making them perfect for all of your consumption needs. Whether it be for
+        snacking or salads, our grapes are filled with antioxidants to pair
+        health, with flavor.
+      </p>
+      <p>
+        <strong
+          >Don't sabotage your body for flavor, buy our grapes and savor them
+          forever.</strong
+        >
+      </p>
+    </section>
+
+<!-- Features here, with an unordered list -->
+    <section id="Key Features">
+      <h3 class="headings">Key Features</h3>
+      <ul class="normaltext">
+        <li>Intensely sweet and juicy</li>
+        <li>
+          Premium grade, each individual grape is checked by our QA team in
+          France
+        </li>
+        <li>
+          Harvested perfectly. Preserved perfectly. Arrives at your doorstep at
+          peak ripeness, perfectly.
+        </li>
+      </ul>
+    </section>
+
+<!-- Specs here, uses a table layout given in Slack -->
+    <section id="Specifications Table">
+      <h3 class="headings">Specifications</h3>
+      <table>
+        <tr class="headings">
+          <th>Variety</th>
+          <th>Origin</th>
+          <th>Size/grape (diameter)</th>
+          <th>Weight</th>
+        </tr>
+        <tr class="normaltext">
+          <td>Concord Black Grapes</td>
+          <td>France</td>
+          <td id="centerable">20-24mm</td>
+          <td>~250g</td>
+        </tr>
+      </table>
+    </section>
+
+<!-- Instructions that has italics and an ordered list -->
+    <section id="Instructions">
+      <h3 class="headings">How to Savor these Delicacies</h3>
+      <ol class="normaltext">
+        <em>
+          <li>
+            Rinse the grapes under lukewarm water. Temperature extremes may harm
+            the flavor profile.
+          </li>
+          <li>
+            Gently remove a single grape from the stem, and check for visual
+            discrepancies.
+          </li>
+          <li>
+            Insert the grape, one at a time, into your mouth. Roll it around,
+            before biting in.
+          </li>
+          <li>
+            Fully savor the unique flavor profiles before inserting another
+            grape into your mouth.
+          </li>
+        </em>
+      </ol>
+    </section>
+
+<!-- Button prompt here -->
+    <section id="Add grapes to cart">
+      <h3 class="headings">Great! How do I buy them?</h3>
+      <p>
+        Purchasing our grapes is as easy as one-two-three. Click on the "Add to
+        Cart" button below, and checkout whenever you're ready.
+      </p>
+      <button type="button">Add to cart!</button>
+    </section>
+
+<!-- Footer, link, email, telephone number -->
+    <footer>
+      <h3 class="headings">About Us</h3>
+      <p>
+        Visit us <a href="www.grapesjustgrapes.com" target="_blank">here</a> to
+        see more of our wonderful products.
+      </p>
+      <p>
+        Questions? Send us an
+        <a href="mailto:hamidjae@byu.edu">email here</a> or call
+        <a href="tel:6825546250">us</a> with your questions. Our customer
+        service is elite.
+      </p>
+    </footer>
+  </body>
+</html>
